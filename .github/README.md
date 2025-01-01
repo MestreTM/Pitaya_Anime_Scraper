@@ -15,12 +15,12 @@ Pitaya Scraper é uma aplicação web em Python desenvolvida para extração de 
 - **Limites de Requisição**: Usa Flask-Limiter para evitar abuso.
 - **Caching**: Implementado com Flask-Caching para otimizar o desempenho e eficiência.
 - **User-Agent Rotativo**: Alterna entre diferentes agentes de usuário para evitar bloqueios.
-- **Execução Headless**: Usa Selenium em modo headless para interações com páginas.
+- **Execução Headless**: Usa Playwright em modo headless para interações com páginas.
 
 ## Tecnologias Utilizadas
 
 - **Flask**: Framework para construção de APIs web.
-- **Selenium**: Automação de navegadores para scraping.
+- **Playwright**: Automação de navegadores para scraping.
 - **SQLAlchemy**: ORM para manipulação do banco de dados.
 - **Flask-Caching**: Cache para respostas frequentes.
 - **Flask-Limiter**: Controle de limite de requisições.
