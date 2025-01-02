@@ -1,7 +1,8 @@
-Flask==2.2.3
+Flask==2.3.2
 Flask-Caching==2.0.1
 Flask-Limiter==2.8.0
-Flask-SQLAlchemy==3.0.2
-playwright==1.32.3
+Flask-SQLAlchemy==3.0.3
+playwright==1.40.0
+playwright-stealth==1.0.6
 SQLAlchemy==2.0.13
-urllib3==1.26.12
+urllib3==1.26.16
