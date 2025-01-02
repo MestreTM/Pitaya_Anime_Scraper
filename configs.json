@@ -1,23 +1,23 @@
 {
- "animesgames": {
-  "domain": "animesgames.cc",
-  "url_patterns": {
-    "anime_main": "^https?://animesgames\\.cc/animes/\\w[\\w-]+/?$",
-    "episode": "^https?://animesgames\\.cc/video/\\d+-\\d+$"
-  },
-  "selectors": {
-    "anime_main": {
-      "episodes_section": ".listaEp .episodioItem a"
+  "animesgames": {
+    "domain": "animesgames.cc",
+    "url_patterns": {
+      "anime_main": "^https?://animesgames\\.cc/animes/\\w[\\w-]+/?$",
+      "episode": "^https?://animesgames\\.cc/video/\\d+-\\d+$"
     },
-    "episode": {
-      "iframe_selectors": [
-        "#jwplayer iframe.metaframe",
-        "#Link a",
-        "#flowplayer a"
-      ]
+    "selectors": {
+      "anime_main": {
+        "episodes_section": ".listaEp .episodioItem a"
+      },
+      "episode": {
+        "iframe_selectors": [
+          "#jwplayer iframe.metaframe",
+          "#Link a",
+          "#flowplayer a"
+        ]
+      }
     }
-  }
-},
+  },
   "animesbr.tv": {
     "domain": "animesbr.tv",
     "url_patterns": {
@@ -69,9 +69,8 @@
       "episode": {
         "iframe_selectors": [
           "iframe.metaframe.rptss",
-          "iframe.player-alternative",
           "div.video-container iframe",
-          "#playerFrame.p2 iframe"
+          "#playerFrame iframe"
         ]
       }
     }
