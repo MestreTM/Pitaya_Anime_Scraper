@@ -4,9 +4,6 @@
 
 Pitaya Scraper é uma aplicação web em Python desenvolvida para extração de URLs de embeds de vídeos e informações relacionadas de páginas de animes ou de filmes. 
 
-> [!NOTE]  
-> Ignore os erros do console enquanto o script funciona. o Chrome gera erros aleatórios como erro de USB por exemplo.
-
 ## Recursos
 
 - **Scraping de animes**: Extrai URLs de episódios e embeds de páginas de animes.
