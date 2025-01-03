@@ -48,13 +48,24 @@ Pitaya Scraper é uma aplicação web em Python desenvolvida para extração de 
                "episode": {
                    "iframe_selectors": ["css_selector_para_iframe"]
                }
-           }
+           },
+           "bypass_javascript": false|true
        }
    }
    ```
-   - Você tambem pode baixar o arquivo `configs.json` com padrões teste já configurados (pode ficar desatualizado).
+   - Você tambem pode baixar o arquivo [configs.json](https://github.com/MestreTM/Pitaya_Anime_Scraper/blob/main/configs.json) com padrões teste já configurados (pode ficar desatualizado).
+  
+3. **Bypass Javascript (opcional)**
 
-3. **Inicie o servidor**:
+   Esta opção vai ser útil se o site alvo tenha proteção contra inspeção ou scraping/crawling. Quando ativada injeta os links das paginas em um `<iframe>` em modo sandbox, fazendo com que todas as proteções 
+   javascript ou redirecionamentos de páginas pararem de funcionar (obs: ele ignora os `iframe_selectors` e sempre vai coletar o iframe de video da página).
+
+- No arquivo configs.json deixe como `true`
+   ```json
+   "bypass_javascript": true
+   ```
+
+4. **Inicie o servidor**:
 
    ```bash
    python Pitaya_Scraper.py
@@ -67,7 +78,8 @@ Obtém o embed URL para um anime ou episódio.
 
 **Parâmetros**:
 - `url`: URL da página do anime ou episódio.
-- `force`: (opcional) força atualização, mesmo que os dados estejam no cache.
+- `force`: opcional (true ou false), se `true`, força atualização, mesmo que os dados estejam no cache.
+- `continue`: opcional (true ou false), Se `true`, instrui o script a continuar de onde parou (aproveitar dados salvos) em vez de reprocessar tudo do zero.
 
 **Cabeçalhos**:
 - `X-API-KEY`: Chave de API para autenticação.
