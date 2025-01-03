@@ -16,7 +16,8 @@
           "#flowplayer a"
         ]
       }
-    }
+    },
+    "bypass_javascript": false
   },
   "animesbr.tv": {
     "domain": "animesbr.tv",
@@ -35,7 +36,8 @@
           "div.video-container iframe"
         ]
       }
-    }
+    },
+    "bypass_javascript": false
   },
   "animesflix.net": {
     "domain": "animesonlinecc.to",
@@ -54,7 +56,8 @@
           "div.video-container iframe"
         ]
       }
-    }
+    },
+    "bypass_javascript": false
   },
   "goyabu": {
     "domain": "goyabu.to",
@@ -69,10 +72,11 @@
       "episode": {
         "iframe_selectors": [
           "iframe.metaframe.rptss",
-          "div.video-container iframe",
           "#playerFrame iframe"
+          
         ]
       }
-    }
+    },
+    "bypass_javascript": true
   }
 }
