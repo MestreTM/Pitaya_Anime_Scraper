@@ -19,6 +19,42 @@
     },
     "bypass_javascript": false
   },
+  "q1n": {
+    "domain": "q1n.net",
+    "url_patterns": {
+      "anime_main": "^https?://q1n\\.net/a/\\w[\\w-]+/?$",
+      "episode": "^https?://q1n\\.net/e/\\d+-\\d+$"
+    },
+    "selectors": {
+      "anime_main": {
+        "episodes_section": ".episodios .episodiotitle a"
+      },
+      "episode": {
+        "iframe_selectors": [
+          "iframe.metaframe.rptss"
+        ]
+      }
+    },
+    "bypass_javascript": false
+  },
+  "anroll": {
+    "domain": "anroll.net",
+    "url_patterns": {
+      "anime_main": "^https?://anroll\\.net/a/\\w[\\w-]+/?$",
+      "episode": "^https?://anroll\\.net/e/\\d+-\\d+$"
+    },
+    "selectors": {
+      "anime_main": {
+        "episodes_section": ".episodios .episodiotitle a"
+      },
+      "episode": {
+        "iframe_selectors": [
+          "jw-media.jw-reset"
+        ]
+      }
+    },
+    "bypass_javascript": false
+  },
   "animesbr.tv": {
     "domain": "animesbr.tv",
     "url_patterns": {
